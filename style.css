@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 7%;
   scroll-behavior: smooth;
 }
 
@@ -149,6 +148,7 @@ h5 {
 
 .projects {
   border-radius: 15px;
+  margin-bottom: 15%;
 }
 
 .three-column-left {
