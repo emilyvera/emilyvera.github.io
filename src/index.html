@@ -4,10 +4,191 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Emily's Portfolio</title>
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+        <script src="/js/main.js"></script>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <a id="home" class="section"></a>
+        <div id="navbar">
+            <div id="navbar-right">
+              <a class="nav-link home active" href="#home" onclick="scrollToTop()">Home</a>
+              <a class="nav-link about" href="#about">About</a>
+              <a class="nav-link overview" href="#overview">Overview</a>
+              <a class="nav-link projects" href="#projects">Projects</a>
+              <a class="nav-link message" href="#message">Message</a>
+            </div>
+        </div>
+
+        <h1 class="center">Student, Tech Enthusiast & Human</h1>
+        <h3 class="center">Welcome to my portfolio. Have a look around!</h3>
+        <img src="/assets/bitmoji.png" alt="My headshot" class="bitmoji-headshot"/>
+        <img src="/assets/tech.png" alt="Tech clipart" class="center tech-clipart"/>
+        
+        <a id="about" class="section"></a>
+        <div id="background-block">
+            <div id="about-container">
+                <div id="two-column-left" class="vertical-center">
+                    <img src="/assets/headshot.jpg" alt="My headshot" class="real-headshot"/>
+                </div>
+                <div id="two-column-right" class="vertical-center">
+                    <h2 class="center">Hi, I'm Emily. Nice to meet you.</h2>
+                    <p class="white-text aboutme-block">
+                        I'm a senior studying computer
+                        science at the University of Illinois at Urbana-Champaign. In
+                        addition to computers, I'm heavily interested in
+                        entreprenuership and the business side of things, so I chose 
+                        to minor in technology and management. I'm in a social 
+                        sorority on campus, Phi Sigma Sigma, and am also involved in 
+                        other clubs such as Society of Women Engineers and Girls Who 
+                        Code. I'm currently an emerging technology intern at Synchrony, 
+                        but will be joining Google as a full-time software engineer 
+                        in fall 2022!
+                    </p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="overview-container">
+            <a id="overview" class="section"></a>
+            <div class="three-column-left center">
+                <i class="fas fa-graduation-cap overview-icon"></i>
+                <h4 class="center">Student</h4>
+                <p class="overview-text text-center">
+                    Above all, I am a student first. I am constantly seeking enrichment opportunities.
+                </p>
+                <p class="field-text center">Field:</p>
+                <p class="overview-text text-center">
+                    B.S. Computer Science, Technology Management Minor
+                </p>
+                <p class="field-text center">Achievements:</p>
+                <p class="overview-text center">3.9 GPA</p>
+                <p class="overview-text center">6-time Dean's List</p>
+                <p class="overview-text center">HSF Scholar</p>
+                <p class="overview-text center">President's Scholarship</p>
+                <p class="overview-text center">GHC Google Scholarship</p>
+            </div>
+            <div class="three-column-middle center">
+                <i class="fas fa-laptop overview-icon"></i>
+                <h4 class="center">Tech Enthusiast</h4>
+                <p class="overview-text text-center">
+                    I like to solve all kinds of tech problems and bring ideas to life in
+                    a creative manner.
+                </p>
+                <p class="field-text center">Languages:</p>
+                <p class="overview-text text-center">
+                    Java, Python, C++, C, HTML, CSS, Javascript
+                </p>
+                <p class="field-text center">Tools:</p>
+                <p class="overview-text center">Android</p>
+                <p class="overview-text center">Databases</p>
+                <p class="overview-text center">GitHub</p>
+                <p class="overview-text center">React</p>
+                <p class="overview-text center">Flutter</p>
+            </div>
+            <div class="three-column-right center">
+                <i class="fas fa-hand-holding-heart overview-icon"></i>
+                <h4 class="center">Human</h4>
+                <p class="overview-text text-center">
+                    If I could have one wish, it would be to add more hours in the day to
+                    just. be. human.
+                </p>
+                <p class="field-text center">Hobbies:</p>
+                <p class="overview-text text-center">
+                    Fashion, foodie, hiking, activism, networking
+                </p>
+                <p class="field-text center">Activities:</p>
+                <p class="overview-text center">5 Internships</p>
+                <p class="overview-text center">3 Hackathons</p>
+                <p class="overview-text center">Girls Who Code</p>
+                <p class="overview-text center">Phi Sigma Sigma</p>
+                <p class="overview-text center">Teaching Assistant</p>
+            </div>
+        </div>
+
+        <div class="fixed-bg"></div>
+
+        <a id="projects" class="section"></a>
+        <h4 class="center">Take a look at some of my projects!</h4>
+        <h5 class="center">Hover over each image</h5>
+        <div class="slideshow-container">
+            <div class="slide container">
+                <img src="/assets/vineyard.jpg" alt="WineSmart" class="image center projects"/>
+                <a href="https://wine-smart.github.io/" target="_blank">
+                    <div class="middle">
+                        <div class="text">Check it out!</div>
+                    </div>
+                </a>
+            </div>
+            <div class="slide container">
+                <img src="/assets/receipt.jpg" alt="ReceiptRoundup" class="image center projects"/>
+                <a href="https://receipt-roundup.ue.r.appspot.com/login.html" target="_blank">
+                    <div class="middle">
+                        <div class="text">Check it out!</div>
+                    </div>
+                </a>
+            </div>
+            <div class="slide container">
+                <img src="/assets/vaccine.jpg" alt="VaccineTracker" class="image center projects"/>
+                <a href="https://covid-unemployment-toolbox.github.io/" target="_blank">
+                    <div class="middle">
+                        <div class="text">Check it out!</div>
+                    </div>
+                </a>
+            </div>
+        
+            <a class="prev" onclick="switchSlide(-1)">&#10094;</a>
+            <a class="next" onclick="switchSlide(1)">&#10095;</a>
+        </div>        
+        <div class="center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <a id="message" class="section"></a>
+        <h4 class="center">A message from me:</h4>
+        <video class="center" controls>
+            <source src="/assets/intro.MOV" type="video/mp4">
+        </video>
+
+        <div class="footer">
+            <div class="footer-left">
+                <img src="assets/logo.png" class="logo">
+            </div>
+            <div class="footer-middle">
+                <a id="download" class="white-text pulse"><u>Download my resume!</u></a>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.linkedin.com/in/emily-vera" target="_blank"
+                  ><img
+                    src="/assets/linkedin.png"
+                    alt="Linkedin icon"
+                    class="center social-media"
+                /></a>
+                <a href="https://github.com/emilyvera" target="_blank"
+                  ><img
+                    src="/assets/github.png"
+                    alt="GitHub icon"
+                    class="center social-media"
+                /></a>
+                <a href="mailto:evera5@illinois.edu" target="_blank"
+                  ><img
+                    src="/assets/email.png"
+                    alt="Email icon"
+                    class="center social-media"
+                /></a>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>You're about to download my resume! Do you wish to continue?</p>
+                <button type="button" class="close">Cancel</button>
+                <button type="button" class="close">
+                    <a href="/assets/resume.pdf" class="close" download>Continue</a>
+                </button>
+            </div>
+        </div>
     </body>
 </html>
