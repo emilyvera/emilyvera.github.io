@@ -29,7 +29,7 @@ window.onscroll = function() {
 
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight + 230) {
         navItems.forEach( item => { item.classList.remove('active'); })
-        document.querySelector('a.message').classList.add('active');
+        document.querySelector('a.projects').classList.add('active');
     }
 };
 
