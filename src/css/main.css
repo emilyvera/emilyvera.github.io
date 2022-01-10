@@ -176,7 +176,7 @@
 	 max-width: 50%;
 }
  .fixed-bg {
-	 background-image: url("/assets/fixed-bg.png");
+	 background-image: url("/src/assets/fixed-bg.png");
 	 min-height: 30vh;
 	 background-attachment: fixed;
 	 background-position: center;
