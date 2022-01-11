@@ -43,25 +43,30 @@ function scrollToTop() {
 // var closeBtn = document.getElementsByClassName("close")[0];
 // var continueBtn = document.getElementsByClassName("close")[1];
 
-var modal;
-var downloadButton;
-var closeBtn;
-var continueBtn;
-
 window.onload = function () {
-    modal = document.getElementById("myModal");
-    downloadButton = document.getElementById("download");
-    closeBtn = document.getElementsByClassName("close")[0];
-    continueBtn = document.getElementsByClassName("close")[1];
+    var modal = document.getElementById("myModal");
+    var downloadButton = document.getElementById("download");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var continueBtn = document.getElementsByClassName("close")[1];
+    
+    downloadButton.onclick = function() {
+        modal.style.display = "block";
+    }
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+    continueBtn.onclick = function() {
+        modal.style.display = "none";
+    }
 };
 
-downloadButton.onclick = function() {
-    modal.style.display = "block";
-}
+// downloadButton.onclick = function() {
+//     modal.style.display = "block";
+// }
 
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-continueBtn.onclick = function() {
-    modal.style.display = "none";
-}
+// closeBtn.onclick = function() {
+//     modal.style.display = "none";
+// }
+// continueBtn.onclick = function() {
+//     modal.style.display = "none";
+// }
