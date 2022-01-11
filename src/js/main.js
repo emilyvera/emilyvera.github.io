@@ -38,10 +38,22 @@ function scrollToTop() {
 }
 
 // Modal logic
-var modal = document.getElementById("myModal");
-var downloadButton = document.getElementById("download");
-var closeBtn = document.getElementsByClassName("close")[0];
-var continueBtn = document.getElementsByClassName("close")[1];
+// var modal = document.getElementById("myModal");
+// var downloadButton = document.getElementById("download");
+// var closeBtn = document.getElementsByClassName("close")[0];
+// var continueBtn = document.getElementsByClassName("close")[1];
+
+var modal;
+var downloadButton;
+var closeBtn;
+var continueBtn;
+
+window.onload = function () {
+    modal = document.getElementById("myModal");
+    downloadButton = document.getElementById("download");
+    closeBtn = document.getElementsByClassName("close")[0];
+    continueBtn = document.getElementsByClassName("close")[1];
+};
 
 downloadButton.onclick = function() {
     modal.style.display = "block";
