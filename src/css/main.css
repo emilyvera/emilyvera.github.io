@@ -286,7 +286,32 @@
 	 font-size: 2.8vh;
 	 padding: 1.2vh 2.8vh;
 }
- .container {
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap; /* IE10 */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.column {
+  flex: 33%;
+  max-width: 33%;
+  -ms-flex: 33%; /* IE10 */
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.container {
 	 position: relative;
 }
  .container:hover .image {
