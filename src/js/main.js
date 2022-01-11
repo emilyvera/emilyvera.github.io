@@ -1,5 +1,26 @@
-const sections = document.querySelectorAll('a.section');
-const navItems = document.querySelectorAll('.nav-link');
+let sections;
+let navItems;
+
+window.onload = function () {
+    sections = document.querySelectorAll('a.section');
+    navItems = document.querySelectorAll('.nav-link');
+    
+    // Modal logic
+    var modal = document.getElementById("myModal");
+    var downloadButton = document.getElementById("download");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var continueBtn = document.getElementsByClassName("close")[1];
+    
+    downloadButton.onclick = function() {
+        modal.style.display = "block";
+    }
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+    continueBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+};
 
 window.onscroll = function() {
     let current = '';
@@ -36,37 +57,3 @@ window.onscroll = function() {
 function scrollToTop() {
     document.documentElement.scrollTop = 0; 
 }
-
-// Modal logic
-// var modal = document.getElementById("myModal");
-// var downloadButton = document.getElementById("download");
-// var closeBtn = document.getElementsByClassName("close")[0];
-// var continueBtn = document.getElementsByClassName("close")[1];
-
-window.onload = function () {
-    var modal = document.getElementById("myModal");
-    var downloadButton = document.getElementById("download");
-    var closeBtn = document.getElementsByClassName("close")[0];
-    var continueBtn = document.getElementsByClassName("close")[1];
-    
-    downloadButton.onclick = function() {
-        modal.style.display = "block";
-    }
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-    continueBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-};
-
-// downloadButton.onclick = function() {
-//     modal.style.display = "block";
-// }
-
-// closeBtn.onclick = function() {
-//     modal.style.display = "none";
-// }
-// continueBtn.onclick = function() {
-//     modal.style.display = "none";
-// }
