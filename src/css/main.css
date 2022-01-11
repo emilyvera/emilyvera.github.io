@@ -289,10 +289,13 @@
 .row {
 	padding-left: 9%;
 	 overflow: auto;
+	padding-bottom: 3%
 }
 .column {
 	float: left;
-	 width: 30%;
+	padding-right: 1%;
+    	padding-left: 1%;
+    	width: 27%;
 }
 .column img {
   margin-top: 8px;
