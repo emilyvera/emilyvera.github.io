@@ -37,30 +37,6 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0; 
 }
 
-// Slideshow logic
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function switchSlide(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var slides = document.querySelectorAll("div.slide");
-    var dots = document.querySelectorAll("span.dot");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    slides.forEach( slide => { slide.style.display = "none"; })
-    dots.forEach( dot => { dot.className = dot.className.replace(" active", ""); })
-    
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
-
 // Modal logic
 var modal = document.getElementById("myModal");
 var downloadButton = document.getElementById("download");
